@@ -1,4 +1,4 @@
-# Backend API
+# Movie Watchlist API
 
 ## Setup
 npm install
