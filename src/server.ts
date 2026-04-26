@@ -3,6 +3,7 @@ import 'dotenv/config';
 import authRoutes from './routes/authRoute.js';
 import watchlistRoute from './routes/watchlistRoutes.js';
 import { notFound, errorHandler } from './middlewares/errorMiddleware.js'; 
+import movieRouter from './routes/movieRoute.js';
 
 
 
@@ -15,7 +16,10 @@ app.use(express.urlencoded({extended: true}))
 
 //Authentication
 app.use('/api/auth', authRoutes)
-app.use('/api/watchlist', watchlistRoute )
+//Watchlist
+app.use('/api/watchlist', watchlistRoute)
+//movie
+app.use('/api/movie', movieRouter)
 
 
 app.use(notFound);

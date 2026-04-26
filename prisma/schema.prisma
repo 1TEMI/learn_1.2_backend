@@ -38,6 +38,7 @@ model Movie{
 
   creator User @relation("MovieCreator", fields:[createdBy], references:[id], onDelete: Cascade)
   watchlistItems WatchListItem[]
+
 }
 
 model WatchListItem {
