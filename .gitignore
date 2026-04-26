@@ -1,0 +1,13 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/src/generated/
+
+# Build output
+dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
